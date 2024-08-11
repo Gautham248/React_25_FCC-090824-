@@ -1,0 +1,11 @@
+.heading{
+    color: aqua;
+}
+
+.active{
+    color: yellow;
+}
+
+.inactive{
+    color: black;
+}
