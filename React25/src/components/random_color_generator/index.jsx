@@ -74,10 +74,12 @@ export default function RandomColor()
 
 
     return <>
-    <div style={{width:'100vw',height:'100vh',background:color}}>
+    <div style={{width:'100vw',height:'100vh',background:color,color:'white'}}>
     <button onClick={()=>setTypeOfColor('hex')}>Generate Random HEX Color</button>
     <button onClick={()=>setTypeOfColor('rgb')}>Generate Random RGB Color</button>
     <button onClick={typeOfColor==='hex'?randomHEXColor:randomRGBColor}>Generate Random Color</button>
+    <h3>{typeOfColor==="rgb"?"RGB":"HEX"}</h3>
+    <h3>{color}</h3>
     </div>
     
     </>
